@@ -27,7 +27,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Runner">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -45,29 +54,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DealerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGame" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DealerTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CollectionTest.Card.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CollectionTest.Card" />
+      <option name="MAIN_CLASS_NAME" value="CollectionTest.Card.CardTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DealerTest.canWantHit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGame" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DealerTest" />
-      <option name="METHOD_NAME" value="canWantHit" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="GameTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGame" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="PACKAGE_NAME" value="ParticipantTest" />
+      <option name="MAIN_CLASS_NAME" value="ParticipantTest.PlayerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -76,10 +90,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Runner" />
-        <item itemvalue="JUnit.DealerTest" />
-        <item itemvalue="JUnit.DealerTest.canWantHit" />
-        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="JUnit.All in CardGame" />
+        <item itemvalue="JUnit.CardTest" />
+        <item itemvalue="JUnit.PlayerTest" />
+        <item itemvalue="JUnit.GameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -97,10 +111,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="286" y="87" key="#Collection_in_CardGame" timestamp="1584981221833">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="286" y="87" key="#Collection_in_CardGame/0.0.1440.900@0.0.1440.900" timestamp="1584981221833" />
     <state x="320" y="115" key="#Intentions" timestamp="1584621806372">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#Intentions/0.0.1440.900@0.0.1440.900" timestamp="1584621806372" />
+    <state x="320" y="115" key="#Project_Structure" timestamp="1584980477425">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1584980477425" />
     <state x="100" y="85" width="1240" height="776" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1584631196085">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -110,6 +132,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1584627808225" />
+    <state x="246" y="382" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584981305428">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="246" y="382" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1584981305428" />
+    <state x="486" y="316" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1584980263470">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="486" y="316" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1584980263470" />
     <state x="128" y="179" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1584911539018">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
@@ -118,58 +148,74 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="477" y="319" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1584882505574" />
-    <state width="1398" height="298" key="GridCell.Tab.0.bottom" timestamp="1584919650004">
+    <state width="1398" height="298" key="GridCell.Tab.0.bottom" timestamp="1584985155454">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584919650004" />
+    <state width="1398" height="298" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584985155454" />
+    <state width="739" height="298" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1584983358466" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1584618420567" />
     <state width="921" height="245" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1584703009755" />
-    <state width="1398" height="298" key="GridCell.Tab.0.center" timestamp="1584919649999">
+    <state width="1398" height="298" key="GridCell.Tab.0.center" timestamp="1584985155452">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584919649999" />
+    <state width="1398" height="298" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584985155452" />
+    <state width="739" height="298" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1584983358465" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1584618420566" />
     <state width="921" height="245" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1584703009754" />
-    <state width="1398" height="298" key="GridCell.Tab.0.left" timestamp="1584919649997">
+    <state width="1398" height="298" key="GridCell.Tab.0.left" timestamp="1584985155451">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584919649997" />
+    <state width="1398" height="298" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584985155451" />
+    <state width="739" height="298" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1584983358464" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1584618420549" />
     <state width="921" height="245" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1584703009753" />
-    <state width="1398" height="298" key="GridCell.Tab.0.right" timestamp="1584919650001">
+    <state width="1398" height="298" key="GridCell.Tab.0.right" timestamp="1584985155453">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584919650001" />
+    <state width="1398" height="298" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584985155453" />
+    <state width="739" height="298" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1584983358465" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1584618420566" />
     <state width="921" height="245" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1584703009754" />
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1584913454464">
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1584980549111">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584913454464" />
-    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1584913454461">
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584980549111" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1584980549109">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1584913454461" />
-    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1584913454459">
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1584980549109" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1584980549108">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1584913454459" />
-    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1584913454462">
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1584980549108" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1584980549110">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1584913454462" />
-    <state width="693" height="900" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1584882160739">
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1584980549110" />
+    <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1584982503626">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="693" height="900" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1440.900@0.0.1440.900" timestamp="1584882160739" />
+    <state x="258" y="112" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1584982503626" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1584978768334">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584978768334" />
+    <state width="693" height="900" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1584979294554">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="693" height="900" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1440.900@0.0.1440.900" timestamp="1584979294554" />
     <state x="301" y="175" width="837" height="550" key="find.popup" timestamp="1584882625623">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="301" y="175" width="837" height="550" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1584882625623" />
-    <state x="482" y="73" key="refactoring.ChangeSignatureDialog" timestamp="1584622162146">
+    <state x="482" y="73" key="refactoring.ChangeSignatureDialog" timestamp="1584975810808">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="482" y="73" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1584622162146" />
+    <state x="482" y="73" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1584975810808" />
+    <state x="385" y="210" key="run.anything.popup" timestamp="1584980955901">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1584980955901" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1584835242015">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

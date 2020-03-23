@@ -1,5 +1,9 @@
+import Collection.Card.*;
+import Collection.Deck;
+import Game.Game;
+import Participant.*;
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.Test;;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,12 +17,13 @@ public class GameTest {
     Player player2;
     Card highCard;
     Card lowCard;
+    ArrayList<Card> hand;
     Dealer dealer;
 
     @Before
     public void before() {
         deck = new Deck();
-        dealer = new Dealer();
+        dealer = new Dealer("Participant.Participant.Dealer");
         game = new Game(deck, dealer);
         player = new Player("Lizzie");
         player2 = new Player("Iain");
@@ -75,11 +80,11 @@ public class GameTest {
 //        assertEquals(player, game.checkWinner());
 //    }
 
-    @Test
-    public void gameCanNotWinner() {
-        player.takeCard(highCard);
-        player.takeCard(lowCard);
-        assertEquals(player.getName() + " has Won" , game.checkWinner());
-
-    }
+//    @Test
+//    public void gameCanNotWinner() {
+//        player.takeCard(highCard);
+//        player.takeCard(lowCard);
+//        assertEquals(ArrayList, game.checkWinner());
+//
+//    }
 }

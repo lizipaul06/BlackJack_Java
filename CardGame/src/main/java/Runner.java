@@ -1,5 +1,8 @@
 
-    import java.util.ArrayList;
+import Collection.Deck;
+import Game.Game;
+import Participant.*;
+
     import java.util.List;
     import java.util.Scanner;
 
@@ -9,15 +12,26 @@ import static java.lang.Integer.parseInt;
         public static void main(String[] args) {
 
             Scanner scanner = new Scanner(System.in);
-            Dealer dealer = new Dealer();
+
+            Dealer dealer = new Dealer("Dealer");
             Deck deck = new Deck();
             Game game = new Game(deck, dealer);
-
+;
             System.out.println("Welcome to BlackJack");
-            System.out.println("How many players would you like to play?");
 
-            String input = scanner.next();
-            int players = parseInt(input);
+            int players = 0;
+            do {
+                System.out.println("How many players would you like to play?");
+
+                int input = scanner.nextInt();
+                if (3 >= input) {
+                    players = input;
+
+                } else {
+                    System.out.println("Please enter number between 1-3");
+
+                }
+            }while(players == 0);
 
             for (int i = 0; i < players; i++) {
                 String prompt = String.format("Player %s, enter your name: ", (i + 1));
@@ -53,16 +67,20 @@ import static java.lang.Integer.parseInt;
 
                     System.out.println(String.format(player.getName() + " Stick or Twist ?"));
                     output2 = scanner.nextLine();
-
+                    if(player.isBlackJack()){
+                        System.out.println(player.getName() + "Has blackjack!");
+                        break;
+                    }
                     if (output2.equalsIgnoreCase("Twist")) {
                         player.takeCard(deck.dealCard());
                         System.out.println(player.handTotal());
                         if (player.isBust()) {
                             System.out.println(player.getName() + " busted and got a total of " + player.handTotal() );
                             game.removePlayer(player);
-
+                           break;
                         }
-                        output2 = "";
+
+
 
                     }
 
@@ -80,11 +98,17 @@ import static java.lang.Integer.parseInt;
                 //DEALER
                 boolean stay = false;
 
+
                 do {
-                    List<Player> winners;
+                    List<Player> winners = game.checkWinner();
                     //DRAW CARD
-                    if (dealer.wantsToHit(game.getPlayers())) {
+                    if(winners.size() == 0){
+                        System.out.println("Dealer has won, all players bust");
+                        System.exit(0);
+                    }
+                    else if (winners.size() > 0 && dealer.wantsToHit()) {
                         dealer.takeCard(deck.dealCard());
+                        System.out.println("Dealer hand:" + dealer.handTotal());
                         if (dealer.isBlackJack()) {
                             System.out.println("Blackjack! Dealer won.");
                             System.exit(0);
@@ -92,14 +116,14 @@ import static java.lang.Integer.parseInt;
                         if (dealer.isBust()) {
                             System.out.println("Dealer busted and got a total of " + dealer.handTotal());
 
-                            winners = game.checkWinner();
+
                             for(Player player: winners) {
                                 System.out.println(String.format(player.getName() + " Wins"));
                             }
                             System.exit(0);
                         }
                     } else {
-                        System.out.println("Dealer has chosen to stay!");
+                        System.out.println("Dealer has chosen to stay with a total of: " + dealer.handTotal());
 
                         winners = game.checkWinner();
                         for(Player player: winners) {
